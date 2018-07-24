@@ -7,7 +7,7 @@
 
 ### Page:
 
-[Live DEMO](https://dawidgierdal.github.io/Drum_Kits/)
+[Live DEMO](https://dawidgierdal.github.io/Verti_RWD/)
 
 
 ### Screenshoots
