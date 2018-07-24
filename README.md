@@ -12,5 +12,5 @@
 
 ### Screenshoots
 ![Image](https://github.com/dawidgierdal/Verti_RWD/blob/master/Screenshots/header.PNG)
-![Image](https://github.com/dawidgierdal/Verti_RWD/blob/master/Screenshots/header.PNG)
-![Image](https://github.com/dawidgierdal/Verti_RWD/blob/master/Screenshots/header.PNG)
+![Image](https://github.com/dawidgierdal/Verti_RWD/blob/master/Screenshots/headermid.PNG)
+![Image](https://github.com/dawidgierdal/Verti_RWD/blob/master/Screenshots/headersmall.PNG)
