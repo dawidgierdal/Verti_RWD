@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  @include tablet {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: map-get($hue_colors, main-color);
+  color: map-get($hue_colors, text-color);
+}
+
+.container {
+  $columnNum: 12;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  @for $i from 1 through $columnNum {
+    .col-#{$i} {
+      width: (100%/$columnNum * $i );
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+    [class*="col-"]{
+      width:100%;
+    }
+  }
+}

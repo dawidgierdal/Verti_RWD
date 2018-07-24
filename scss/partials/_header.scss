@@ -1,0 +1,133 @@
+header {
+  margin-top: 50px;
+}
+
+.nav-set {
+  justify-content: space-between;
+}
+
+.menu {
+  padding:  0;
+  margin: 25px 0 0 0 ;
+
+  @include mobile {
+    display: none;
+  }
+
+  li {
+    display: inline-block;
+    margin-left:40px;
+    @include tablet {
+      margin-left: 10px;
+    }
+    a {
+      color: map-get($hue_colors, accent-color);
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 5px 10px;
+      display:inline-block;
+    }
+    &:hover {
+      background-color: map-get($hue_colors, light-color);
+      border-radius: 4px;
+    }
+    .active {
+      background-color: map-get($hue_colors, text-color );
+      border-radius: 4px;
+      color:  map-get($hue_colors, light-color );
+    }
+  }
+
+}
+
+.hamburger {
+  display:none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2rem;
+  background-color: map-get($hue_colors, transparent-black);
+  padding: 4px 18px;
+  color:  map-get($hue_colors, light-color );
+  border-radius: 4px;
+
+  @include mobile {
+    display: block;
+    position: fixed;
+  }
+}
+
+.logo {
+  font-family: 'Oleo Script', cursive;
+  background-color:  map-get($vivid_colors, vivid-color1);
+  color:   map-get($hue_colors, light-color);
+  border-radius: 8px;
+  padding: 3px 15px;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  display: inline-block;
+  text-decoration: none;
+  width:135px;
+  @include mobile {
+    width: 115px;
+    margin: 0 auto;
+  }
+  // font-style: italic;
+}
+
+.baner {
+  margin-top: 30px;
+  border-radius: 4px;
+  padding: 6%;
+  background-color: map-get($hue_colors, light-color);
+  @include mobile {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: map-get($hue_colors, text-color);
+    margin: 0;
+  }
+  p {
+    font-size: 2.5rem;
+    color: map-get($hue_colors, accent-color);
+    margin: 20px 0 0 0;
+    font-weight: 100;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    .btn {
+      width: 85%;
+      height: 90px;
+      display: block;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 2rem;
+      text-decoration: none;
+      padding: 23px;
+      position: relative;
+      i {
+        position: absolute;
+        right: 23px;
+        top: 30px;
+      }
+      @include mobile {
+        width:100%;
+      }
+    }
+    .next-btn {
+      background-color: map-get($vivid_colors, vivid-color2);
+      color:  map-get($hue_colors, light-color);
+    }
+    .info-btn {
+      color:  map-get($hue_colors, text-color);
+      background-color:  map-get($hue_colors, lighter-color);
+    }
+  }
+
+}

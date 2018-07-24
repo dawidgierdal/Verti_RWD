@@ -1,0 +1,17 @@
+.copyright {
+  ul {
+    margin-left: 45%;
+    padding-bottom: 5rem;
+    li {
+      display: inline-block;
+    }
+    a {
+      color: map_get($hue_colors, text-color);
+      font-weight: 300;
+      font-size: 1rem;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

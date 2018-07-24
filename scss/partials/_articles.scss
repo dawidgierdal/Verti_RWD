@@ -1,0 +1,60 @@
+.articles {
+  margin-top: 25px;
+
+  [class*="article"] {
+    background-color: map-get($hue_colors, light-color);
+    border-radius: 4px;
+    width: 95%;
+
+    @include mobile {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+  .article_right {
+    margin-left: 5%;
+    @include mobile {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+
+  .article_center {
+    margin: 0 auto;
+  }
+
+  img  {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+  }
+
+  h1,
+  h2,
+  p {
+    padding: 0 2rem;
+    color: map-get($hue_colors, text-color);
+  }
+
+  h1 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  p {
+    margin: 2.5rem 0;
+    padding-bottom: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+
+  }
+}
